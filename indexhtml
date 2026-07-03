@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Directory</title>
+  <meta name="keywords" content="pinay, Filipina">
+  <meta name="description" content="Dark Blogger XML live directory theme filtered only for pinay and Filipina tags.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gamboge Pinay &amp; Filipina Live Directory">
+  <meta property="og:description" content="Dark Blogger XML live directory theme filtered only for pinay and Filipina tags.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gamboge Pinay &amp; Filipina Live Directory">
+  <meta name="twitter:description" content="Dark Blogger XML live directory theme filtered only for pinay and Filipina tags.">
+  <link rel="canonical" href="https://chaturbate.com/in/?tour=bbrB&amp;campaign=T2CSW&amp;track=default&amp;tag=pinay&amp;gender=f">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Pinay Filipina Live Directory",
+    "description": "Dark Blogger XML live directory theme filtered only for pinay and Filipina tags.",
+    "url": "https://chaturbate.com/in/?tour=bbrB&amp;campaign=T2CSW&amp;track=default&amp;tag=pinay&amp;gender=f",
+    "keywords": ["pinay", "Filipina"]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #19160d;
+      --bg2: #232318;
+      --bg3: #333222;
+      --border: #4d4628;
+      --border2: #655b31;
+      --text: #eefbff;
+      --text-muted: #d5aa51;
+      --text-dim: #be902e;
+      --accent: #e49b0f;
+      --accent2: #e6ba5c;
+      --live: #e6c374;
+      --live-bg: rgba(230,195,116,0.14);
+      --link: #e9ad3a;
+      --link-hover: #f7e1b7;
+      --tag-bg: #2e2d1f;
+      --tag-text: #f5d9a4;
+      --row-hover: #383926;
+      --font-mono: 'SFMono-Regular', 'Consolas', 'Liberation Mono', monospace;
+      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 14px; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font-sans); line-height: 1.5; min-height: 100vh; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { color: var(--link-hover); text-decoration: underline; text-shadow: 0 0 6px rgba(228,155,15,0.55); }
+    #navbar { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0 16px; height: 44px; display: flex; align-items: center; gap: 24px; position: sticky; top: 0; z-index: 100; }
+    #navbar .site-title { font-weight: 700; font-size: 1rem; color: var(--accent); letter-spacing: -0.3px; white-space: nowrap; text-shadow: 0 0 8px #e49b0f, 0 0 24px rgba(230,186,92,0.5); }
+    #navbar .nav-links { display: flex; gap: 16px; align-items: center; flex: 1; }
+    #navbar .nav-links a { color: var(--text-muted); font-size: 0.8rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+    #navbar .nav-links a:hover { color: var(--text); text-decoration: none; }
+    #navbar .live-count { margin-left: auto; font-size: 0.78rem; color: var(--text-muted); white-space: nowrap; font-family: var(--font-mono); }
+    #navbar .live-count span { color: var(--live); font-weight: 600; text-shadow: 0 0 6px rgba(230,195,116,0.75); }
+    #outer-wrapper { max-width: 1280px; margin: 0 auto; padding: 0 12px; }
+    #seo-hero { padding: 16px 0 14px; border-bottom: 1px solid var(--border); }
+    #seo-h1 { font-size: 1.1rem; font-weight: 700; color: var(--text); line-height: 1.4; margin-bottom: 7px; }
+    #seo-h1 #seo-count { color: var(--accent); }
+    #seo-desc { font-size: 0.81rem; color: var(--text-muted); line-height: 1.65; max-width: 900px; margin-bottom: 10px; }
+    #seo-desc strong { color: var(--text); }
+    #seo-desc em { color: var(--live); font-style: normal; }
+    #seo-tags { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+    .seo-label { font-size: 0.7rem; color: var(--text-dim); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-right: 2px; }
+    #seo-tags a { background: var(--tag-bg); color: var(--tag-text); border: 1px solid var(--border2); border-radius: 3px; padding: 2px 7px; font-size: 0.7rem; white-space: nowrap; text-decoration: none; }
+    #seo-tags a:hover { color: #fff; border-color: var(--accent); box-shadow: 0 0 6px rgba(228,155,15,0.45); text-decoration: none; }
+    #seo-tags a.active { background: var(--accent); color: #000; border-color: var(--accent2); font-weight: 700; }
+    .controls-bar { display: flex; align-items: center; gap: 10px; padding: 12px 0 10px; flex-wrap: wrap; border-bottom: 1px solid var(--border); margin-bottom: 0; }
+    .controls-bar label { font-size: 0.78rem; color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.4px; }
+    .controls-bar input[type='text'], .controls-bar select { background: var(--bg3); border: 1px solid var(--border2); color: var(--text); border-radius: 4px; padding: 5px 9px; font-size: 0.82rem; font-family: var(--font-sans); outline: none; }
+    .controls-bar input[type='text']:focus, .controls-bar select:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(228,155,15,0.28); }
+    .controls-bar select option { background: var(--bg2); }
+    #search-input { width: 200px; }
+    .controls-bar .spacer { flex: 1; }
+    .controls-bar .refresh-btn { background: var(--bg3); border: 1px solid var(--border2); color: var(--text-muted); border-radius: 4px; padding: 5px 12px; font-size: 0.78rem; cursor: pointer; font-family: var(--font-sans); transition: color 0.15s, border-color 0.15s; }
+    .controls-bar .refresh-btn:hover { color: var(--accent); border-color: var(--accent); box-shadow: 0 0 6px rgba(228,155,15,0.45); }
+    #status-bar { font-size: 0.75rem; color: var(--text-dim); padding: 6px 0; font-family: var(--font-mono); display: flex; align-items: center; gap: 12px; border-bottom: 1px solid var(--border); }
+    #status-bar .sep { color: var(--border2); }
+    .table-wrap { width: 100%; overflow-x: auto; }
+    #rooms-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    #rooms-table thead tr { background: var(--bg2); border-bottom: 2px solid var(--border2); }
+    #rooms-table thead th { text-align: left; padding: 9px 10px; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.6px; color: var(--text-muted); white-space: nowrap; cursor: pointer; user-select: none; }
+    #rooms-table thead th:hover { color: var(--accent); }
+    #rooms-table thead th.sort-asc::after { content: ' ▲'; color: var(--accent); text-shadow: 0 0 6px #e49b0f; }
+    #rooms-table thead th.sort-desc::after { content: ' ▼'; color: var(--accent); text-shadow: 0 0 6px #e49b0f; }
+    #rooms-table thead th.num { text-align: right; }
+    #rooms-table tbody tr { border-bottom: 1px solid var(--border); transition: background 0.08s; }
+    #rooms-table tbody tr:hover { background: var(--row-hover); }
+    #rooms-table td { padding: 8px 10px; vertical-align: middle; white-space: nowrap; }
+    #rooms-table td.num { text-align: right; font-family: var(--font-mono); }
+    .col-user { min-width: 180px; }
+    .col-user a { font-weight: 600; color: #eefbff; display: flex; align-items: center; gap: 8px; }
+    .col-user a:hover { color: var(--accent); text-decoration: none; text-shadow: 0 0 8px rgba(228,155,15,0.65); }
+    .col-user .avatar { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; background: var(--bg3); border: 1px solid var(--border2); flex-shrink: 0; }
+    .badge-live { display: inline-flex; align-items: center; gap: 4px; background: var(--live-bg); color: var(--live); border: 1px solid rgba(230,195,116,0.36); border-radius: 3px; padding: 1px 6px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; box-shadow: 0 0 8px rgba(230,195,116,0.5); }
+    .badge-live::before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--live); animation: pulse 1.6s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+    .viewers-val { color: var(--live); font-family: var(--font-mono); text-shadow: 0 0 5px rgba(230,195,116,0.6); }
+    .gender-f { color: #f5d9a4; }
+    .source-val { color: var(--accent); font-family: var(--font-mono); font-size: 0.78rem; }
+    .tags-cell { max-width: 220px; overflow: hidden; display: flex; flex-wrap: nowrap; gap: 4px; }
+    .tag { background: #2e2d1f; color: var(--tag-text); border: 1px solid rgba(228,155,15,0.32); border-radius: 3px; padding: 1px 6px; font-size: 0.7rem; white-space: nowrap; flex-shrink: 0; }
+    .tag:hover { color: #fff; border-color: #e49b0f; box-shadow: 0 0 8px rgba(228,155,15,0.55); cursor: pointer; }
+    #loading-row td, #error-row td, #empty-row td { text-align: center; padding: 48px 16px; color: var(--text-muted); font-size: 0.85rem; }
+    #error-row td { color: #f87171; }
+    .spinner { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--border2); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.7s linear infinite; vertical-align: middle; margin-right: 8px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    #pagination { display: flex; align-items: center; gap: 6px; padding: 12px 0 20px; flex-wrap: wrap; border-top: 1px solid var(--border); }
+    #pagination button { background: var(--bg3); border: 1px solid var(--border2); color: var(--text-muted); border-radius: 4px; padding: 4px 10px; font-size: 0.78rem; cursor: pointer; font-family: var(--font-sans); min-width: 32px; }
+    #pagination button:hover { color: var(--text); border-color: var(--accent); }
+    #pagination button.active { background: var(--accent); border-color: var(--accent2); color: #000; box-shadow: 0 0 10px rgba(228,155,15,0.62); }
+    #pagination button:disabled { opacity: 0.3; cursor: default; }
+    #pagination .page-info { font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); margin-left: 8px; }
+    #seo-content { background: var(--bg2); border: 1px solid var(--border); border-radius: 4px; padding: 18px 20px; margin: 14px 0; }
+    #seo-content h2 { font-size: 0.88rem; font-weight: 700; color: var(--text); margin: 16px 0 5px; padding-bottom: 5px; border-bottom: 1px solid var(--border); }
+    #seo-content h2:first-child { margin-top: 0; }
+    #seo-content p { font-size: 0.79rem; color: var(--text-muted); line-height: 1.75; }
+    #seo-content strong { color: var(--text); font-weight: 600; }
+    #seo-content em { color: var(--live); font-style: normal; }
+    .blog-posts-section { margin-top: 32px; border-top: 1px solid var(--border); padding-top: 16px; }
+    .blog-posts-section h2 { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.6px; color: var(--text-muted); margin-bottom: 12px; }
+    .post-list { list-style: none; }
+    .post-list li { border-bottom: 1px solid var(--border); padding: 8px 0; }
+    .post-list li a { color: var(--text); font-size: 0.88rem; }
+    .post-list li a:hover { color: var(--accent); }
+    .post-list .post-meta { font-size: 0.72rem; color: var(--text-dim); margin-top: 2px; }
+    #footer { border-top: 1px solid var(--border); padding: 14px 0; font-size: 0.72rem; color: var(--text-dim); display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+    #footer a { color: var(--text-dim); }
+    #footer a:hover { color: var(--text-muted); }
+    #footer .ml { margin-left: auto; }
+    @media (max-width: 720px) { .col-source { display: none; } #search-input { width: 140px; } }
+    @media (max-width: 520px) { .col-viewers { display: none; } #navbar .nav-links { display: none; } }
+  </style>
+</head>
+<body>
+  <div id="navbar">
+    <span class="site-title">● GAMBOGE PINAY FILIPINA</span>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#directory">pinay</a>
+      <a href="#directory">Filipina</a>
+      <a href="https://chaturbate.com/in/?tour=bbrB&amp;campaign=T2CSW&amp;track=default&amp;tag=pinay&amp;gender=f" rel="nofollow sponsored noopener" target="_blank">Live</a>
+    </nav>
+    <span class="live-count">Online: <span id="total-count">—</span></span>
+  </div>
+  <div id="outer-wrapper">
+    <header id="seo-hero">
+      <h1 id="seo-h1">Pinay &amp; Filipina Live Rooms — <span id="seo-count">Live</span> Online Now</h1>
+      <nav id="seo-tags" aria-label="Pinay and Filipina tags">
+        <span class="seo-label">Tags:</span>
+        <a href="#directory" class="active" onclick="filterTag('pinay');return false;">pinay</a>
+        <a href="#directory" onclick="filterTag('Filipina');return false;">Filipina</a>
+      </nav>
+    </header>
+    <div class="controls-bar" id="directory">
+      <label for="search-input">Search</label>
+      <input id="search-input" placeholder="username, source, pinay, Filipina..." type="text">
+      <label for="per-page-select">Per page</label>
+      <select id="per-page-select">
+        <option value="25">25</option>
+        <option value="50" selected>50</option>
+        <option value="100">100</option>
+      </select>
+      <div class="spacer"></div>
+      <button class="refresh-btn" id="refresh-btn" onclick="fetchRooms()">↻ Refresh</button>
+    </div>
+    <div id="status-bar">
+      <span id="status-text">Loading…</span>
+      <span class="sep">|</span>
+      <span id="status-showing">—</span>
+      <span class="sep">|</span>
+      <span id="status-updated">—</span>
+    </div>
+    <div class="table-wrap">
+      <table id="rooms-table">
+        <thead>
+          <tr>
+            <th class="col-user" data-sort="username" onclick="sortBy(this)">Username</th>
+            <th data-sort="status">Status</th>
+            <th class="col-viewers num" data-sort="num_users" onclick="sortBy(this)">Viewers</th>
+            <th class="col-source" data-sort="source" onclick="sortBy(this)">Source</th>
+            <th class="col-tags">Tags</th>
+            <th data-sort="action">Open</th>
+          </tr>
+        </thead>
+        <tbody id="rooms-body">
+          <tr id="loading-row">
+            <td colspan="6"><span class="spinner"></span>Fetching live rooms…</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="pagination"></div>
+    <section id="seo-content" aria-label="About pinay and Filipina live directory">
+      <h2>Pinay and Filipina Tag Directory</h2>
+      <p>This Blogger XML theme shows Chaturbate API rooms tagged <strong>pinay</strong> or <strong>Filipina</strong>. It uses an ice-blue compact data-table layout, sortable rows, search, pagination, and automatic refresh behavior.</p>
+      <h2>Live Room Links</h2>
+      <p>The live feed uses the Chaturbate affiliate API and converts every matching room click into your revshare URL.</p>
+    </section>
+    
+    <!-- Blog posts section (static demo) -->
+    <div class="blog-posts-section">
+      <h2>Latest Posts</h2>
+      <ul class="post-list">
+        <li><a href="#">Pinay Vibes: Live Today</a><div class="post-meta">April 2, 2026 — Chaturbate</div></li>
+        <li><a href="#">Filipina Room Highlights</a><div class="post-meta">April 1, 2026 — Chaturbate</div></li>
+        <li><a href="#">Gamboge Directory Update</a><div class="post-meta">March 30, 2026 — Admin</div></li>
+      </ul>
+    </div>
+    
+    <div id="footer">
+      <span>Tags: <strong>pinay</strong>, <strong>Filipina</strong></span>
+      <span>—</span>
+      <span>Data updates every 5 min</span>
+      <span class="ml">Powered by <a href="#">Gamboge Pinay</a></span>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      // Chaturbate API endpoints (public / affiliate)
+      const API_URL = 'https://chaturbate.com/api/public/affiliates/onlinerooms/?wm=T2CSW&client_ip=request_ip&limit=500&offset=0&format=json';
+      const TAGGED_API_URLS = [API_URL + '&tag=pinay', API_URL + '&tag=filipina'];
+
+      let allRooms = [];
+      let filtered = [];
+      let currentPage = 1;
+      let sortCol = 'num_users';
+      let sortDir = 'desc';
+      let lastFetched = null;
+
+      function el(id) { return document.getElementById(id); }
+
+      function escHtml(s) {
+        return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+      }
+
+      function normalizeTags(tags) {
+        if (Array.isArray(tags)) return tags.map(t => String(t || '').trim()).filter(Boolean);
+        if (typeof tags === 'string') return tags.split(/[\s,]+/).map(t => t.trim()).filter(Boolean);
+        return [];
+      }
+
+      function tagMatchesAllowed(tags) {
+        return normalizeTags(tags).some(t => {
+          t = String(t || '').toLowerCase();
+          return t === 'pinay' || t === 'filipina';
+        });
+      }
+
+      function allowedMatch(r) {
+        return r._matchedTag || tagMatchesAllowed(r.tags);
+      }
+
+      function revshareRoomUrl(username) {
+        return 'https://chaturbate.com/in/?tour=bbrB&campaign=T2CSW&track=default&tag=pinay&gender=f&room=' + encodeURIComponent(username || '');
+      }
+
+      function normalize(r) {
+        const username = r.username || r.display_name || 'filipina-live';
+        let matchingTags = normalizeTags(r.tags).filter(t => {
+          t = String(t || '').toLowerCase();
+          return t === 'pinay' || t === 'filipina';
+        });
+        if (!matchingTags.length && r._matchedTag) matchingTags = [r._matchedTag];
+        if (!matchingTags.length) matchingTags = ['pinay', 'Filipina'];
+
+        return {
+          username: username,
+          display_name: r.display_name || username,
+          source: 'Chaturbate',
+          num_users: typeof r.num_users === 'number' ? r.num_users : (r.viewers || r.num_users || 'Live'),
+          tags: matchingTags,
+          image_url: r.image_url || r.thumb || r.snapshot_url || '',
+          url: revshareRoomUrl(username)
+        };
+      }
+
+      function setLoading() {
+        el('rooms-body').innerHTML = '<tr id="loading-row"><td colspan="6"><span class="spinner"></span>Fetching live rooms…</td></tr>';
+        el('pagination').innerHTML = '';
+        el('status-text').textContent = 'Loading…';
+        el('status-showing').textContent = '—';
+      }
+
+      function fetchAllRooms(url, acc, matchedTag) {
+        acc = acc || [];
+        return fetch(url, { mode: 'cors' })
+          .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+          .then(data => {
+            let results = Array.isArray(data) ? data : (data.results || data.rooms || data.data || []);
+            results = results.map(room => {
+              if (matchedTag && !room._matchedTag) room._matchedTag = matchedTag;
+              return room;
+            });
+            acc = acc.concat(results);
+            if (data && data.next && acc.length < 10000) return fetchAllRooms(data.next, acc, matchedTag);
+            return acc;
+          });
+      }
+
+      function dedupeRooms(rooms) {
+        const seen = {};
+        return rooms.filter(room => {
+          const key = String(room.username || room.display_name || room.chat_room_url || room.url || '').toLowerCase();
+          if (!key || seen[key]) return false;
+          seen[key] = true;
+          return true;
+        });
+      }
+
+      function fetchTaggedRooms() {
+        return Promise.all([
+          fetchAllRooms(TAGGED_API_URLS[0], [], 'pinay').catch(() => []),
+          fetchAllRooms(TAGGED_API_URLS[1], [], 'Filipina').catch(() => []),
+          fetchAllRooms(API_URL, [], '').catch(() => [])
+        ]).then(sets => {
+          return dedupeRooms([].concat(sets[0], sets[1], sets[2]));
+        });
+      }
+
+      function applyFilters() {
+        const q = (el('search-input').value || '').toLowerCase().trim();
+        filtered = allRooms.filter(r => {
+          const text = [r.username, r.display_name, r.source, (r.tags || []).join(' ')].join(' ').toLowerCase();
+          return !q || text.indexOf(q) !== -1;
+        });
+        sortAndRender();
+      }
+
+      function sortAndRender() {
+        const col = sortCol;
+        const dir = sortDir;
+        filtered.sort((a, b) => {
+          let av = a[col];
+          let bv = b[col];
+          const an = typeof av === 'number' ? av : parseInt(String(av).replace(/[^0-9]/g, ''), 10);
+          const bn = typeof bv === 'number' ? bv : parseInt(String(bv).replace(/[^0-9]/g, ''), 10);
+          if (!isNaN(an) && !isNaN(bn)) return dir === 'asc' ? an - bn : bn - an;
+          av = String(av || '').toLowerCase();
+          bv = String(bv || '').toLowerCase();
+          return av < bv ? (dir === 'asc' ? -1 : 1) : av > bv ? (dir === 'asc' ? 1 : -1) : 0;
+        });
+        currentPage = 1;
+        render();
+      }
+
+      function render() {
+        const perPage = parseInt(el('per-page-select').value, 10) || 50;
+        const total = filtered.length;
+        const pages = Math.ceil(total / perPage) || 1;
+        if (currentPage > pages) currentPage = pages;
+        const start = (currentPage - 1) * perPage;
+        const end = Math.min(start + perPage, total);
+        const slice = filtered.slice(start, end);
+
+        el('status-text').textContent = total.toLocaleString() + ' rows';
+        el('seo-count').textContent = total.toLocaleString();
+        el('status-showing').textContent = total ? 'showing ' + (start + 1) + '–' + end : 'showing 0';
+        el('status-updated').textContent = lastFetched ? 'updated ' + lastFetched.toLocaleTimeString() : '';
+        el('total-count').textContent = total.toLocaleString();
+
+        if (!slice.length) {
+          el('rooms-body').innerHTML = '<tr id="empty-row"><td colspan="6">No pinay or Filipina rows match your filters.</td></tr>';
+          el('pagination').innerHTML = '';
+          return;
+        }
+
+        el('rooms-body').innerHTML = slice.map(r => {
+          const img = r.image_url ? '<img class="avatar" src="' + escHtml(r.image_url) + '" alt="" loading="lazy"/>' : '<span class="avatar"></span>';
+          const viewers = typeof r.num_users === 'number' ? r.num_users.toLocaleString() : escHtml(r.num_users || 'Live');
+          const tags = (r.tags || ['pinay', 'Filipina']).map(tag => '<span class="tag" onclick="filterTag(\'' + escHtml(tag) + '\')">' + escHtml(tag) + '</span>').join('');
+          return '<tr>'
+            + '<td class="col-user"><a href="' + escHtml(r.url) + '" target="_blank" rel="nofollow sponsored noopener">' + img + escHtml(r.display_name || r.username) + '</a></td>'
+            + '<td><span class="badge-live">LIVE</span></td>'
+            + '<td class="col-viewers num"><span class="viewers-val">' + viewers + '</span></td>'
+            + '<td class="col-source"><span class="source-val">' + escHtml(r.source || 'Source') + '</span></td>'
+            + '<td class="col-tags"><div class="tags-cell">' + tags + '</div></td>'
+            + '<td><a href="' + escHtml(r.url) + '" target="_blank" rel="nofollow sponsored noopener">Open</a></td>'
+            + '</tr>';
+        }).join('');
+
+        renderPagination(total, pages);
+      }
+
+      function renderPagination(total, pages) {
+        const pg = el('pagination');
+        if (pages <= 1) { pg.innerHTML = ''; return; }
+        let html = '<button ' + (currentPage <= 1 ? 'disabled' : '') + ' onclick="goPage(' + (currentPage - 1) + ')">‹ Prev</button>';
+        const show = {};
+        show[1] = true; show[pages] = true;
+        for (let i = Math.max(1, currentPage - 2); i <= Math.min(pages, currentPage + 2); i++) show[i] = true;
+        let prev = 0;
+        Object.keys(show).map(Number).sort((a, b) => a - b).forEach(p => {
+          if (prev && p - prev > 1) html += '<button disabled>…</button>';
+          html += '<button class="' + (p === currentPage ? 'active' : '') + '" onclick="goPage(' + p + ')">' + p + '</button>';
+          prev = p;
+        });
+        html += '<button ' + (currentPage >= pages ? 'disabled' : '') + ' onclick="goPage(' + (currentPage + 1) + ')">Next ›</button>';
+        html += '<span class="page-info">page ' + currentPage + ' of ' + pages + ' &nbsp;·&nbsp; ' + total.toLocaleString() + ' results</span>';
+        pg.innerHTML = html;
+      }
+
+      window.fetchRooms = function () {
+        setLoading();
+        const btn = el('refresh-btn');
+        btn.textContent = 'Loading…';
+        btn.disabled = true;
+        fetchTaggedRooms()
+          .then(results => {
+            const live = results.filter(allowedMatch).map(normalize);
+            allRooms = live;
+            lastFetched = new Date();
+            applyFilters();
+          })
+          .catch(() => {
+            allRooms = [];
+            lastFetched = new Date();
+            applyFilters();
+          })
+          .finally(() => {
+            btn.textContent = '↻ Refresh';
+            btn.disabled = false;
+          });
+      };
+
+      window.goPage = function (p) { currentPage = p; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+      window.sortBy = function (th) {
+        const col = th.getAttribute('data-sort');
+        if (!col) return;
+        if (sortCol === col) sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+        else { sortCol = col; sortDir = col === 'num_users' ? 'desc' : 'asc'; }
+        document.querySelectorAll('#rooms-table thead th').forEach(h => {
+          h.classList.remove('sort-asc', 'sort-desc');
+          if (h.getAttribute('data-sort') === sortCol) h.classList.add(sortDir === 'asc' ? 'sort-asc' : 'sort-desc');
+        });
+        sortAndRender();
+      };
+      window.filterTag = function (tag) { el('search-input').value = tag; applyFilters(); };
+
+      el('search-input').addEventListener('input', applyFilters);
+      el('per-page-select').addEventListener('change', function () { currentPage = 1; render(); });
+      document.querySelectorAll('#rooms-table thead th').forEach(h => {
+        if (h.getAttribute('data-sort') === sortCol) h.classList.add('sort-desc');
+      });
+
+      // initial fetch
+      window.fetchRooms();
+      setInterval(window.fetchRooms, 5 * 60 * 1000);
+    })();
+  </script>
+</body>
+</html>
